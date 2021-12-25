@@ -17,7 +17,6 @@ class CatGetter:
         return requests.get(url, verify=False).content
 
 
-
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message, "Howdy, how are you doing?")
