@@ -9,8 +9,8 @@ bot = telebot.TeleBot(token)
 
 class CatGetter:
     def __init__(self):
-        self.urls_list = requests.get('https://catoverflow.com/api/query?offset=0&limit=10000000',
-                                      verify=False).text.rstrip().split()
+        url = 'https://catoverflow.com/api/query?offset=0&limit=10000000'
+        self.urls_list = requests.get(url, verify=False).text.rstrip().split()
 
     def get_picture(self):
         url = random.choice(self.urls_list) + '.jpg'
