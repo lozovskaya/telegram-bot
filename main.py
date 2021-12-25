@@ -16,8 +16,10 @@ class CatGetter:
         url = random.choice(self.urls_list) + '.jpg'
         return requests.get(url, verify=False).content
 
+
 def message_size(message):
     return len(message)
+
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
