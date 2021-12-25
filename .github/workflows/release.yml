@@ -22,4 +22,4 @@ jobs:
         pip install pytest
     - name: Testing the code with pytest
       run: |
-      python -m pytest .
+        python -m pytest .
