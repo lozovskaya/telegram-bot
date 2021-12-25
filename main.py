@@ -16,6 +16,8 @@ class CatGetter:
         url = random.choice(self.urls_list) + '.jpg'
         return requests.get(url, verify=False).content
 
+def message_size(message):
+    return len(message)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -32,7 +34,7 @@ def send_picture_of_cat(message):
 
 @bot.message_handler(content_types=["text"])
 def repeat_all_messages(message):
-    bot.send_message(message.chat.id, message.text)
+    bot.send_message(message.chat.id, str(message_size(message.text)))
 
 
 if __name__ == '__main__':
