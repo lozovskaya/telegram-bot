@@ -1,9 +1,8 @@
-name: CD
+name: CD-docker-pusher
 
 on:
   workflow_run:
     workflows: ["Release"]
-    branches: [main]
     types: [completed]
 
 jobs:
