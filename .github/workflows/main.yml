@@ -22,7 +22,7 @@ jobs:
         flake8 `ls -R|grep .py$|xargs`
     - name: Testing the code with pytest
         run: |
-        python -m pytest .
+          python -m pytest .
 
   build_docker:
     runs-on: ubuntu-latest
