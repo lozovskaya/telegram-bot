@@ -3,8 +3,6 @@ name: Release
 on:
   release:
     types: [created]
-  tags:
-    types: [created]
 
 jobs:
   release:
