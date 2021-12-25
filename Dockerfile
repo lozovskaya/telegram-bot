@@ -5,4 +5,4 @@ COPY requirements.txt requirements.txt
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 COPY . .
-ENT RYPOINT ./start.sh
+ENTRYPOINT ./start.sh
