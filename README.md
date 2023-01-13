@@ -1,7 +1,7 @@
-# telegram-bot
+# Telegram bot for cheering you up
 
-Лозовская Алина Николаевна
+Telegram bot that sends your cute pictures of cats and dogs 
 
-Юзернейм бота: @alinashelperbot
+Bot's username: @alinashelperbot
 
-Бот хостится на yandex.cloud
+Hosted in [Yandex.Cloud](https://cloud.yandex.com/en/)
